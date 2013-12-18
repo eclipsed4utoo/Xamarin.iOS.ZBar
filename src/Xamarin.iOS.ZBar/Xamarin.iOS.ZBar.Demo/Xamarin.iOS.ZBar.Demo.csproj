@@ -100,9 +100,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="Xamarin.iOS.ZBar">
-      <HintPath>..\Xamarin.iOS.ZBar\bin\Debug\Xamarin.iOS.ZBar.dll</HintPath>
-    </Reference>
     <Reference Include="ZBar">
       <HintPath>..\..\ZBar.dll</HintPath>
     </Reference>
@@ -126,5 +123,11 @@
   <ItemGroup>
     <InterfaceDefinition Include="ZBarDemoViewController_iPhone.xib" />
     <InterfaceDefinition Include="ZBarDemoViewController_iPad.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.iOS.ZBar\Xamarin.iOS.ZBar.csproj">
+      <Project>{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}</Project>
+      <Name>Xamarin.iOS.ZBar</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
