@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.iOS.ZBar.Demo", "Xamarin.iOS.ZBar.Demo\Xamarin.iOS.ZBar.Demo.csproj", "{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.iOS.ZBar", "Xamarin.iOS.ZBar\Xamarin.iOS.ZBar.csproj", "{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Release|iPhone.Build.0 = Release|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{8DB234A1-69B8-4D79-A6E7-BF0D13818FDB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Release|iPhone.Build.0 = Release|iPhone
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B37813E0-9467-4E4F-B7BB-C7B98F9A94E2}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Xamarin.iOS.ZBar.Demo\Xamarin.iOS.ZBar.Demo.csproj
+	EndGlobalSection
+EndGlobal
