@@ -2,6 +2,7 @@ using System;
 using MonoTouch.UIKit;
 using ZBar;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace Xamarin.iOS.ZBar
 {
@@ -23,6 +24,36 @@ namespace Xamarin.iOS.ZBar
 			DisableAllSymbologies ();
 			var list = new List<ZBarSymbolType> () { ZBarSymbolType.Code128, ZBarSymbolType.Code39, ZBarSymbolType.QRCode };
 			EnableSymbologies (list);
+			SetupUI ();
+		}
+
+		private void SetupUI()
+		{
+			var screenHeight = UIScreen.MainScreen.Bounds.Height;
+			var screenWidth = UIScreen.MainScreen.Bounds.Width;
+			var topViewHeight = (float)Math.Round ((screenHeight / 3) - 44, 1);
+			var middle = screenHeight / 2;
+			var redlineHeight = 4f;
+
+			var topView = new UIView (new RectangleF(0, 0, screenWidth, topViewHeight));
+			topView.BackgroundColor = UIColor.Black;
+			topView.Alpha = 0.5f;
+			topView.Opaque = false;
+			topView.AutoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight;
+			this.View.AddSubview (topView);
+
+			var bottomView = new UIView (new RectangleF (0, screenHeight - topViewHeight - 44, screenWidth, topViewHeight));
+			bottomView.BackgroundColor = UIColor.Black;
+			bottomView.Alpha = 0.5f;
+			bottomView.Opaque = false;
+			this.View.AddSubview (bottomView);
+
+			var redlineView = new UIView (new RectangleF(0, (float)(middle - (redlineHeight / 2)), screenWidth, redlineHeight));
+			redlineView.BackgroundColor = UIColor.Red;
+			redlineView.Alpha = 0.5f;
+			redlineView.AutoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleBottomMargin | UIViewAutoresizing.FlexibleTopMargin;
+
+			this.View.AddSubview (redlineView);
 		}
 
 		public void DisableAllSymbologies()
