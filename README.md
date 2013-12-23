@@ -8,6 +8,8 @@ Wrapper class for ZBar implementation in Xamarin.iOS
 
     public override void ViewDidLoad()
     {
+       base.ViewDidLoad();
+       
        // create scanner instance
        var scanner = new ZBarScanner();
        scanner.BarcodeScanned += (object sender, BarcodeScanResultEventArgs e) =>
