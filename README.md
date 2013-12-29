@@ -1,7 +1,7 @@
 Xamarin.iOS.ZBar
 ================
 
-Wrapper class for ZBar implementation in Xamarin.iOS
+Wrapper class for ZBar implementation in Xamarin.iOS (MonoTouch)
 
 ### Simple Usage
 
